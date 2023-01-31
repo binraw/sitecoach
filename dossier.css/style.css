@@ -402,44 +402,40 @@ a h1 {
 }
 
 @media (min-width:769px){
-    
-
     *{
         margin: 0;
         padding: 0;
         list-style: none;
-        font-family: Serif;
+        font-family: Montserrat ,serif;
         text-decoration: none;
-    }
-
-    html{
-        scroll-behavior:smooth 2s;
-    }
-
-    body{
-        background-color:  #d2d3c376;
-    }
-
-    .fond{
-        position: relative;
-       /* background-image: url(/illustrations/foret-petite.jpg);*/
-        height:300px;
-        background-color: #d2d3c3;
-        top: 0;
         
     }
+/*-----------image Accueil-----------*/
+.fond{
+    position: relative;
+   /* background-image: url(/illustrations/foret-petite.jpg);*/
+    height:300px;
+    background-color: #C08493;
+    top: 0;
+    
+}
+body{
+    background-color: #fffcec;
+}
+/*----------Titre accueil---------*/    
+a h1 {
+   position: sticky;
+    top: 100px;
+    bottom: auto;
+    left: 100px;
+    right: 100px;
+    color: rgb(255, 255, 255);
+    margin: 1em;
+    letter-spacing: .17em;
+    
 
-    .fond h1{
-        color: #ffffff;
-        position:sticky;
-        top: 50px;
-        margin: 0 30px;
-
-
-
-       
-    }      
-
+    
+}
 /*-----------MENU DEROULANT----------*/    
     .menu-btn{
         position: relative;
@@ -503,12 +499,12 @@ a h1 {
 
     .menu-btn.open .menu-btn__burger::before{
         transform:rotate(55deg) translate(36px, -40px) 
-        scale(1.52, 1.52);;
-        transition: 1s; ;
+        scale(1.52, 1.52);
+        transition: 1s; 
     }
     .menu-btn.open .menu-btn__burger::after{
         transform: rotate(-45deg) translate(30px, 35px)
-        scale(1.52, 1.52);;
+        scale(1.52, 1.52);
         transition: 1s;
     }
 
@@ -524,17 +520,20 @@ a h1 {
     
     display: block;
     font-size: 1.5em;
-    background-color: rgb(19, 18, 57);
-    border: black solid 5px; 
+    background: rgb(255,203,204);
+    background: linear-gradient(128deg, rgba(255,203,204,1) 0%, rgba(192,132,147,1) 48%);
+    border: black solid 1px; 
     width: 90%;
     margin: 10px;
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
+    
     
     
 }
 
 #prin{
     font-size:xx-large;
-    padding: .5em;;
+    padding: .5em;
     
 }
 
@@ -581,122 +580,198 @@ a h1 {
     
     
    }
-.firstgroupe{
-    display: block;
-}
    
 .fondbox1{
     position: relative;
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
+    max-width: 100%;
+    border-radius: 24px;
     margin: 10px;
-    
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
     
 }
 .fondbox1 p , .fondbox1 h3 {
-    color: rgb(19, 18, 57);
+    color: #000000;
 }
 
-
-.fondbox2{
-    position: relative;
-    background-color: #d2d3c3;
-    padding: 2rem;
+.span1{
+    width: 7em;
     text-align: center;
-    max-width: 50%;
-    margin: 50px 300px;
-    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(128deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
     
 }
 
-.fondbox2:hover{
-   transform: scale(1.2);
-   box-shadow: 100px #00000089;
+.fondbox2{
+    position: relative;
+    background-color: #FFCBCC;
+    padding: 2rem;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 24px;
+    margin: 50px 10px;
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
+    
 }
 
-.fondbox2::before,
-.fondbox2::after{
-    background: linear-gradient(45deg,#ff0057,#e64a19);
+.fondbox2 li , .fondbox2 h2 , .fondbox2 p {
+    color: #000000;
 }
-.fondbox2 li , .fondbox2 h3 , .fondbox2 p {
-    color: rgb(19, 18, 57);
+
+.span2{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(333deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
 }
 
 
 
 .fondbox3{
     position: relative;
-   /* background-color: rgb(19, 18, 57);*/
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 100%;
+    border-radius: 24px;
     margin: 50px 10px;
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
     
 }
-.fondbox3 li , .fondbox3 h3, .fondbox3 h2 {
-    color: rgb(19, 18, 57);
+.fondbox3 li ,  .fondbox3 h2, .fondbox3 h3 {
+    color: #000000;
 }
 .fondbox3 a {
     color: teal;
 }
+.span3{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(209deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
+}
 
 .fondbox4{
     position: relative;
-    background-color: #d2d3c3;
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
-    max-width: 50%;
-    margin: 50px 300px;
-    border-radius: 10px;
+    max-width: 100%;
+    border-radius: 24px;
+    margin: 50px 10px;
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
     
 }
-.fondbox4 li , .fondbox4 h3, .fondbox4 h2 {
-    color:rgb(19, 18, 57);
+.fondbox4 li ,  .fondbox4 h2 {
+    color: #000000;
 }
 .fondbox4 a {
-    color: teal;
+    color: #2a66ad;
+}
+
+.span4{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(20deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
 }
 
 .fondbox5{
     position: relative;
-   /* background-color: #d2d3c3;*/
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 100%;
+    border-radius: 24px;
     margin: 50px 10px;
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
     
 }
-.fondbox5 p , .fondbox5 h3, .fondbox5 h2 {
-    color: rgb(19, 18, 57);
+.fondbox5 p ,  .fondbox5 h2 {
+    color: #000000;
 }
 .fondbox5 a {
-    color: teal;
+    color: #2a66ad;
+}
+
+.span5{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(90deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
 }
 
 .fondbox6{
     position: relative;
-    background-color: #d2d3c3;
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
-    max-width: 50%;
-    margin: 50px 300px;
-    border-radius: 10px;
+    max-width: 100%;
+    border-radius: 24px;
+    margin: 50px 10px;
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
     
 }
-.fondbox6 p , .fondbox6 h3, .fondbox6 h2 {
-    color: rgb(19, 18, 57);
+.fondbox6 p ,  .fondbox6 h2 {
+    color: #000000;
 }
 .fondbox6 a {
-    color: teal;
+    color: #2a66ad;
 }
 
-
-
-
+.span6{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(295deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+   
+}
 
    h3{
     margin: 1em;
-    color:  rgb(19, 18, 57);
+    color:  #000000;
    }
    p,ul,li{
     margin: .5em;
@@ -723,7 +798,4 @@ a h1 {
    footer{
     background-color: rgb(234, 238, 230);
    }
-
-
-
 }
