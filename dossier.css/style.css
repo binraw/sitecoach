@@ -417,14 +417,14 @@ a h1 {
     }
 
     body{
-        background-color:  #d2d3c376;
+        background-color: #fffcec;
     }
 
     .fond{
         position: relative;
        /* background-image: url(/illustrations/foret-petite.jpg);*/
         height:300px;
-        background-color: #d2d3c3;
+        background-color: #C08493;
         top: 0;
         
     }
@@ -503,12 +503,12 @@ a h1 {
 
     .menu-btn.open .menu-btn__burger::before{
         transform:rotate(55deg) translate(36px, -40px) 
-        scale(1.52, 1.52);;
-        transition: 1s; ;
+        scale(1.52, 1.52);
+        transition: 1s; 
     }
     .menu-btn.open .menu-btn__burger::after{
         transform: rotate(-45deg) translate(30px, 35px)
-        scale(1.52, 1.52);;
+        scale(1.52, 1.52);
         transition: 1s;
     }
 
@@ -524,7 +524,8 @@ a h1 {
     
     display: block;
     font-size: 1.5em;
-    background-color: rgb(19, 18, 57);
+    background: rgb(255,203,204);
+    background: linear-gradient(128deg, rgba(255,203,204,1) 0%, rgba(192,132,147,1) 48%);
     border: black solid 5px; 
     width: 90%;
     margin: 10px;
@@ -534,7 +535,7 @@ a h1 {
 
 #prin{
     font-size:xx-large;
-    padding: .5em;;
+    padding: .5em;
     
 }
 
@@ -587,20 +588,37 @@ a h1 {
    
 .fondbox1{
     position: relative;
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
+    max-width: 100%;
+    border-radius: 24px;
     margin: 10px;
-    
+    box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
     
 }
 .fondbox1 p , .fondbox1 h3 {
     color: rgb(19, 18, 57);
 }
 
+.span1{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(128deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+    
+}
+
 
 .fondbox2{
     position: relative;
-    background-color: #d2d3c3;
+    background-color:#FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 50%;
@@ -622,11 +640,24 @@ a h1 {
     color: rgb(19, 18, 57);
 }
 
+.span2{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(333deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
+}
 
 
 .fondbox3{
     position: relative;
-   /* background-color: rgb(19, 18, 57);*/
+   background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 100%;
@@ -640,9 +671,23 @@ a h1 {
     color: teal;
 }
 
+.span3{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(209deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
+}
+
 .fondbox4{
     position: relative;
-    background-color: #d2d3c3;
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 50%;
@@ -657,9 +702,23 @@ a h1 {
     color: teal;
 }
 
+.span4{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(20deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
+}
+
 .fondbox5{
     position: relative;
-   /* background-color: #d2d3c3;*/
+   background-color:#FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 100%;
@@ -673,9 +732,23 @@ a h1 {
     color: teal;
 }
 
+.span5{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(90deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+
+}
+
 .fondbox6{
     position: relative;
-    background-color: #d2d3c3;
+    background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 50%;
@@ -690,6 +763,19 @@ a h1 {
     color: teal;
 }
 
+.span6{
+    width: 7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    border-radius: 20px;
+    background: rgb(175,164,206);
+    background: linear-gradient(295deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
+    font-size: 1em;
+    margin-top: 10px;
+   
+}
 
 
 
