@@ -410,36 +410,27 @@ a h1 {
         text-decoration: none;
         
     }
-/*-----------image Accueil-----------*/
-.fond{
-    position: relative;
-   /* background-image: url(/illustrations/foret-petite.jpg);*/
-    height:300px;
-    background-color: #C08493;
-    top: 0;
-    
-}
-main{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-   
-    grid-row-gap: .2em;
-    
-}
-body{
-    background-color: #fffcec;
-}
-/*----------Titre accueil---------*/    
-a h1 {
-   position: sticky;
-    top: 100px;
-    bottom: auto;
-    left: 100px;
-    right: 100px;
-    color: rgb(255, 255, 255);
-    margin: 1em;
-    letter-spacing: .17em;
-    
+
+    body{
+        background-color: #fffcec;
+    }
+
+    .fond{
+        position: relative;
+       /* background-image: url(/illustrations/foret-petite.jpg);*/
+        height:300px;
+        background-color: #C08493;
+        top: 0;
+        
+    }
+
+    .fond h1{
+        color: #ffffff;
+        position:sticky;
+        top: 50px;
+        margin: 0 30px;
+
+
 
     
 }
@@ -505,13 +496,13 @@ a h1 {
     }
 
     .menu-btn.open .menu-btn__burger::before{
-        transform:rotate(55deg) translate(36px, -40px) 
-        scale(1.52, 1.52);
+        transform:rotate(55deg) translate(36px, -40px);
+        scale:(1.52, 1.52);
         transition: 1s; 
     }
     .menu-btn.open .menu-btn__burger::after{
-        transform: rotate(-45deg) translate(30px, 35px)
-        scale(1.52, 1.52);
+        transform: rotate(-45deg) translate(30px, 35px);
+        scale:(1.52, 1.52);
         transition: 1s;
     }
 
@@ -529,7 +520,7 @@ a h1 {
     font-size: 1.5em;
     background: rgb(255,203,204);
     background: linear-gradient(128deg, rgba(255,203,204,1) 0%, rgba(192,132,147,1) 48%);
-    border: black solid 1px; 
+    border: black solid 5px; 
     width: 90%;
     margin: 10px;
     box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
@@ -541,6 +532,7 @@ a h1 {
 #prin{
     font-size:xx-large;
     padding: .5em;
+   
     
 }
 
@@ -593,7 +585,7 @@ a h1 {
     background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
-    max-width: 33%;
+    max-width: 100%;
     border-radius: 24px;
     margin: 10px;
     box-shadow: #ffffff1a 0 1px 1px inset, #32325d66 0 50px 100px -20px, #0000004d 0 30px 60px -30px;
@@ -617,9 +609,10 @@ a h1 {
     
 }
 
+
 .fondbox2{
     position: relative;
-    background-color: #FFCBCC;
+    background-color:#FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 33%;
@@ -647,11 +640,9 @@ a h1 {
 
 }
 
-
-
 .fondbox3{
     position: relative;
-    background-color: #FFCBCC;
+   background-color: #FFCBCC;
     padding: 2rem;
     text-align: center;
     max-width: 33%;
@@ -666,6 +657,7 @@ a h1 {
 .fondbox3 a {
     color: teal;
 }
+
 .span3{
     width: 7em;
     text-align: center;
@@ -712,6 +704,7 @@ a h1 {
 
 }
 
+
 .fondbox5{
     position: relative;
     background-color: #FFCBCC;
@@ -743,6 +736,7 @@ a h1 {
 
 }
 
+
 .fondbox6{
     position: relative;
     background-color: #FFCBCC;
@@ -761,19 +755,7 @@ a h1 {
     color: #2a66ad;
 }
 
-.span6{
-    width: 7em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 3em;
-    border-radius: 20px;
-    background: rgb(175,164,206);
-    background: linear-gradient(295deg, rgba(175,164,206,1) 0%, rgba(240,161,191,1) 70%);
-    font-size: 1em;
-    margin-top: 10px;
-   
-}
+
 
    h3{
     margin: 1em;

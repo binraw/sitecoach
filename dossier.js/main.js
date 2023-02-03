@@ -179,10 +179,3 @@ boxSix.addEventListener('click', () =>{
         spannnnnn.style.display='block';
     }
 })
-
-
-
-
-
-
-
