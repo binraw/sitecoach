@@ -1,250 +1,231 @@
+@media (max-width: 768px) {
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+	/*-----------image Accueil-----------*/
+	.fond {
+		position: relative;
+		/* background-image: url(/illustrations/foret-petite.jpg);*/
+		height: 300px;
+		background-color: rgb(19, 18, 57);
+		top: 0;
+	}
+	/*----------Titre accueil---------*/
+	a h1 {
+		position: sticky;
+		top: 100px;
+		bottom: auto;
+		left: 100px;
+		right: 100px;
+		color: rgb(255, 255, 255);
+		margin: 1em;
+		letter-spacing: 0.17em;
+	}
 
-@media  (max-width : 768px)  { 
-    
-    *{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        font-family: 'Montserrat','serif';
-        text-decoration: none;
-    }
-/*-----------image Accueil-----------*/
-.fond{
-    position: relative;
-   /* background-image: url(/illustrations/foret-petite.jpg);*/
-    height:300px;
-    background-color: rgb(19, 18, 57);
-    top: 0;
-    
-}
-/*----------Titre accueil---------*/    
-a h1 {
-   position: sticky;
-    top: 100px;
-    bottom: auto;
-    left: 100px;
-    right: 100px;
-    color: rgb(255, 255, 255);
-    margin: 1em;
-    letter-spacing: .17em;
-    
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin: 0.5em;
+	}
+	/*-----------MENU DEROULANT----------*/
+	.menu-btn {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		width: 80px;
+		height: 80px;
+		cursor: pointer;
+		transition: all 0.5 ease-in-out;
 
-    
-}
+		/*border: 3px solid rgb(0, 0, 0);*/
+	}
 
+	.menu-btn__burger {
+		position: relative;
+		top: 30px;
+		left: 10px;
+		width: 50px;
+		height: 6px;
+		background: black;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgb(0, 0, 0);
+		transition: all 1s ease-in-out;
+	}
 
-    h1 ,h2 ,h3 ,h4{
-        margin: 0.5em; ;
-    }
-/*-----------MENU DEROULANT----------*/    
-    .menu-btn{
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all .5 ease-in-out;
-       
-        /*border: 3px solid rgb(0, 0, 0);*/
-    }
+	.menu-btn__burger::before,
+	.menu-btn__burger::after {
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 6px;
+		background: black;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgb(0, 0, 0);
+		transition: all 0.5 ease-in-out;
+	}
+	.menu-btn__burger::before {
+		transform: translateY(-16px);
+		transition: 1s;
+	}
+	.menu-btn__burger::after {
+		transform: translateY(16px);
+		transition: 1s;
+	}
 
-    .menu-btn__burger{
-        position: relative;
-        top: 30px;
-        left: 10px;
-        width: 50px;
-        height: 6px;
-        background: black;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgb(0, 0, 0);
-        transition: all 1s ease-in-out;
-    }
+	/*-----------ANIMATION-----------*/
 
-    .menu-btn__burger::before,
-    .menu-btn__burger::after{
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 6px;
-        background: black;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgb(0, 0, 0);
-        transition: all .5 ease-in-out;
-    }
-    .menu-btn__burger::before{
-        transform: translateY(-16px);
-        transition: 1s;
-    }
-    .menu-btn__burger::after{
-        transform: translateY(16px);
-        transition: 1s;
-    }
+	.menu-btn.open .menu-btn__burger {
+		transform: translateX(-50px);
+		transition: 1s;
+		background: transparent;
+		box-shadow: none;
+	}
 
-    /*-----------ANIMATION-----------*/
+	.menu-btn.open .menu-btn__burger::before {
+		transform: rotate(55deg) translate(36px, -40px) scale(1.52, 1.52);
+		transition: 1s;
+	}
+	.menu-btn.open .menu-btn__burger::after {
+		transform: rotate(-45deg) translate(30px, 35px) scale(1.52, 1.52);
+		transition: 1s;
+	}
 
+	.bouton {
+		display: none;
+	}
 
+	.bouton a :hover {
+		color: black;
+	}
+	.bouton.ouvert {
+		display: block;
+		font-size: 1.5em;
+		background-color: rgb(19, 18, 57);
+		border: black solid 5px;
+		width: 90%;
+		margin: 10px;
+		border-radius: 15%;
+	}
 
- 
-    .menu-btn.open .menu-btn__burger{
-        transform: translateX(-50px) ;
-        transition: 1s;
-        background: transparent;
-        box-shadow: none;
-      
+	#prin {
+		font-size: xx-large;
+		padding: 0.5em;
+	}
 
-    }
+	.bouton li {
+		margin: 0.5em;
+		color: #ffffff;
+	}
 
-    .menu-btn.open .menu-btn__burger::before{
-        transform:rotate(55deg) translate(36px, -40px) 
-        scale(1.52, 1.52);;
-        transition: 1s; ;
-    }
-    .menu-btn.open .menu-btn__burger::after{
-        transform: rotate(-45deg) translate(30px, 35px)
-        scale(1.52, 1.52);;
-        transition: 1s;
-    }
+	.onglet1 {
+		display: none;
+	}
+	.onglet1.open {
+		display: block;
+	}
+	.onglet2 {
+		display: none;
+	}
+	.onglet2.open {
+		display: block;
+	}
 
-    .bouton{
-        display: none;
-        
-    }
+	.onglet3 {
+		display: none;
+	}
+	.onglet3.open {
+		display: block;
+	}
 
-    .bouton a :hover{
-        color: black;
-    }
-   .bouton.ouvert{
-    
-    display: block;
-    font-size: 1.5em;
-    background-color: rgb(19, 18, 57);
-    border: black solid 5px; 
-    width: 90%;
-    margin: 10px;
-    border-radius: 15%;
-    
-    
-}
+	.onglet1 li,
+	.onglet2 li,
+	.onglet3 li {
+		margin: 2em;
+	}
 
-#prin{
-    font-size:xx-large;
-    padding: .5em;;
-    
-}
+	/*--------------deuxieme PARTIE-----------*/
+	.titre1 {
+		margin: 2em;
+	}
+	.fondbox1 {
+		position: relative;
+		background-color: rgb(19, 18, 57);
+		padding: 2rem;
+		text-align: center;
+		max-width: 100%;
+		border-radius: 24px;
+		margin: 10px;
+	}
 
+	.fondbox1 li,
+	.fondbox1 p,
+	.fondbox1 h2,
+	.fondbox1 h4 {
+		color: #ffffff;
+	}
 
-.bouton li{
-    margin: .5em;
-    color: #ffffff;  
-    
-} 
+	.fondbox2 {
+		position: relative;
+		background-color: rgb(19, 18, 57);
+		padding: 2rem;
+		text-align: center;
+		max-width: 100%;
+		border-radius: 24px;
+		margin: 10px;
+	}
 
+	.fondbox2 h2,
+	.fondbox2 p,
+	.fondbox2 h4 {
+		color: #ffffff;
+		margin: 1em;
+	}
 
+	.fondbox3 {
+		position: relative;
+		background-color: rgb(19, 18, 57);
+		padding: 2rem;
+		text-align: center;
+		max-width: 100%;
+		border-radius: 24px;
+		margin: 10px;
+	}
+	.fondbox3 h2,
+	.fondbox3 p,
+	.fondbox3 h4,
+	.fondbox3 li {
+		color: #ffffff;
+		margin: 1em;
+	}
 
-   .onglet1{
-    display: none;
-    
-   }
-   .onglet1.open{
-   display: block;
-   }
-   .onglet2{
-    display: none;
-   }
-   .onglet2.open{
-    display: block;
-   }
+	.fondbox4 {
+		position: relative;
+		background-color: rgb(19, 18, 57);
+		padding: 2rem;
+		text-align: center;
+		max-width: 100%;
+		border-radius: 24px;
+		margin: 10px;
+	}
 
-   .onglet3{
-    display: none;
-   }
-   .onglet3.open{
-    display: block;
-   }
-   
-   .onglet1 li,.onglet2 li , .onglet3 li{
-    margin: 2em;
-   }
+	.fondbox4 h3,
+	.fondbox4 p {
+		color: #ffffff;
+		margin: 1em;
+	}
 
+	li {
+		margin: 1em;
+	}
 
-/*--------------deuxieme PARTIE-----------*/
-.titre1{
-    margin: 2em;
-    
-}
-.fondbox1{
-    position: relative;
-    background-color: rgb(19, 18, 57);
-    padding: 2rem;
-    text-align: center;
-    max-width: 100%;
-    border-radius: 24px;
-    margin: 10px;
-    
-}
-
-.fondbox1 li , .fondbox1 p , .fondbox1 h2 , .fondbox1 h4 {
-    color: #ffffff;
-}
-
-
-.fondbox2{
-    position: relative;
-    background-color: rgb(19, 18, 57);
-    padding: 2rem;
-    text-align: center;
-    max-width: 100%;
-    border-radius: 24px;
-    margin: 10px;
-    
-}
-
-.fondbox2 h2 , .fondbox2 p , .fondbox2 h4 {
-    color: #ffffff;
-    margin: 1em;
-}
-
-.fondbox3{
-    position: relative;
-    background-color: rgb(19, 18, 57);
-    padding: 2rem;
-    text-align: center;
-    max-width: 100%;
-    border-radius: 24px;
-    margin: 10px;
-    
-}
-.fondbox3 h2 , .fondbox3 p , .fondbox3 h4 ,.fondbox3 li{
-    color: #ffffff;
-    margin: 1em;
-}
-
-.fondbox4{
-    position: relative;
-    background-color: rgb(19, 18, 57);
-    padding: 2rem;
-    text-align: center;
-    max-width: 100%;
-    border-radius: 24px;
-    margin: 10px;
-    
-}
-
- .fondbox4 h3 , .fondbox4 p {
-    color: #ffffff;
-    margin: 1em;
-}
-
-
-li {
-    margin: 1em;
-}
- 
-   /*-----------FOOTER----------*/
-   footer{
-    background-color: rgb(234, 238, 230);
-   }
+	/*-----------FOOTER----------*/
+	footer {
+		background-color: rgb(234, 238, 230);
+	}
 }

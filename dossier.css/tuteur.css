@@ -5,7 +5,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-family: 'Montserrat','serif';
+        font-family: 'Montserrat';
         text-decoration: none;
     }
 /*-----------image Accueil-----------*/
@@ -34,7 +34,7 @@ a h1 {
 
 
     h1 ,h2 ,h3 ,h4{
-        margin: 0.5em; ;
+        margin: 0.5em; 
     }
 /*-----------MENU DEROULANT----------*/    
     .menu-btn{
@@ -99,12 +99,12 @@ a h1 {
 
     .menu-btn.open .menu-btn__burger::before{
         transform:rotate(55deg) translate(36px, -40px) 
-        scale(1.52, 1.52);;
-        transition: 1s; ;
+        scale(1.52, 1.52);
+        transition: 1s; 
     }
     .menu-btn.open .menu-btn__burger::after{
         transform: rotate(-45deg) translate(30px, 35px)
-        scale(1.52, 1.52);;
+        scale(1.52, 1.52);
         transition: 1s;
     }
 
@@ -131,7 +131,7 @@ a h1 {
 
 #prin{
     font-size:xx-large;
-    padding: .5em;;
+    padding: .5em;
     
 }
 
