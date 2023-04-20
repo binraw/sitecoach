@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "swiper": "^9.2.3"
+  }
+}

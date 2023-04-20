@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Silkscreen&display=swap");
+		</style>
+		<link rel="stylesheet" href="/dossier.css/stylemaj.css" />
+		<link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
+
+		<title>Coach Alice Ruelloux</title>
+	</head>
+	<body>
+		<nav>
+			<div class="contener-nav">
+				<ul class="bar-nav">
+					<li><a id="works" href="#"></a>Mon travail</li>
+					<li><a href="#"></a>Mes expériences</li>
+					<li><a href="#"></a>contacts</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="first-vu">
+			<h1 class="first-title">Coaching & Formation</h1>
+
+			<img
+				class="coach"
+				src="/illustrations/coach-grand.jpg"
+				alt="Coach Ruelloux"
+				srcset=""
+			/>
+			<!-- <p>Prendre contact</p>
+				<button>Cliquez ici</button> -->
+
+			<h2 class="first-title">Alice Ruelloux</h2>
+		</div>
+
+		<section class="introduction">
+			<h2>
+				Offrez-vous un coaching, engagez-vous dans une formation pour mieux
+				vivre l'entreprise
+			</h2>
+
+			<h3>Osez vous lancer avec Alice Ruelloux, Coaching & Formation</h3>
+		</section>
+		<aside
+			id="modal1"
+			class="modal"
+			aria-hidden="true"
+			role="dialog"
+			style="display: none"
+		>
+			<div class="modal-wrapper">
+				<!-- <div class="elements-modal"> -->
+				<button id="close">fermer la boite modale</button>
+				<h2 id="title-modale">Galerie photo</h2>
+			</div>
+		</aside>
+
+		<!-- Swiper -->
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div id="first-slide" class="swiper-slide">
+					<h2 id="first-title">Slide 1</h2>
+				</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script type="module" src="/dossier.js/mainmaj.js"></script>
+		<script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+		<script src="/node_modules/animejs/lib/anime.js"></script>
+	</body>
+</html>
